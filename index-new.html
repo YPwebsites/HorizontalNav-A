@@ -10,6 +10,7 @@
 <!-- BEGIN HTML COPY/PASTE -->
 
 
+
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -19,7 +20,6 @@
 
 <!-- script for scroll to top, IE drop down menu fix, and mobile quick nav link script -->
 <script type="text/javascript" src="gfx/yp-scripts.js"></script>
-
 
 <!-- mobile navigation script -->
 <script>
@@ -47,19 +47,45 @@ $(document).ready(function(){
 </div> 
 <!-- end mobile cta panel -->
 
+
+
 <!-- back to top -->
 <p id="back-top">
 		<a href="#top"><span></span>Back to Top</a>
 </p>
 <!-- end back to top -->
 
-<!-- begin mobile phone # -->
-<div id="m-phone-number">
-    <a href="tel:{PHONE}" class="phone-header-button">{PHONE}</a>
-</div> 
-<!-- end mobile phone # -->
 
-   
+<!-- wrapper menu -->
+<div id="wrapper-menu">
+	<nav id="menu" class="sk-container">
+        	<ul id="nav">
+        		<li class="current first"><a href="#">Home</a>
+                	<ul>
+                    	<li><a href="#">drop 1</a>
+                        	<ul>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 2</a></li>
+                                <li><a href="#">drop 2</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li><a href="#">drop 1</a></li>
+                        <li><a href="#">drop 1</a></li>
+                        <li><a href="#">drop 1</a></li>
+                        <li><a href="#">drop 1</a></li>
+                    </ul>
+                 
+                </li>
+                <li><a href="#">Services</a></li>
+                <li class="last"><a href="#">Contact Us</a></li>	
+            </ul>
+        </nav><!-- end web nav -->
+</div>
+<!-- end wrapper menu -->
+
 
 <!-- mobile menu -->
 	<nav id="m-menu" >
@@ -95,48 +121,28 @@ $(document).ready(function(){
               
 	</nav>
 <!-- end mobile menu -->
+
+   
 <!-- header -->
+
 <div id="wrapper-header" class="skinBg"><!-- the skin bg is one of the images that can be swapped out by the user through the UI -->  
 
     <header id="header" class="sk-container">
-        <div id="logo" class="twelve columns">
+        <div id="logo" class="sixteen columns">
         	<a href="#">Company Name</a>
         </div><!-- end logo -->
-        
-        <div id="phone-number" class="four columns">
-        	404-555-5555
-        </div><!-- end phone -->
-    
-  		<nav id="menu" class="sixteen columns">
-        	<ul id="nav">
-        		<li class="current first"><a href="#">Home</a>
-                	<ul>
-                    	<li><a href="#">drop 1</a>
-                        	<ul>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                            </ul>
-                        
-                        </li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                    </ul>
-                 
-                </li>
-                <li><a href="#">Services</a></li>
-                <li class="last"><a href="#">Contact Us</a></li>	
-            </ul>
-        </nav><!-- end web nav -->
-        
-        
-    
+       
+        <!-- begin mobile phone # -->
+            <div id="m-phone-number">
+                <a href="tel:{PHONE}">{PHONE}</a>
+            </div> 
+        <!-- end mobile phone # --> 
      
      	<div id="header-image-container" class="sixteen columns">
+         <div id="phone-number">
+        	404-555-5555
+        </div><!-- end phone -->
+        
    	    	<img id="siteMainDynHeaderImage1" src="gfx/header_image_1.jpg" >
         </div> 
      	<!-- end header image -->

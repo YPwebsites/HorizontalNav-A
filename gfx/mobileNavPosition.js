@@ -39,25 +39,24 @@ $(document).ready(function(){
 			return false;
 		});
 	});
-	var childHpx = $('nav#m-menu ul#nav li').css("height");
-	var childH = childHpx.replace("px", "");
-	var childN = $('nav#m-menu ul#nav li').size();
-	var parentH = ((childH*-1)*(childN*1));
-	
-	$('nav#m-menu').css("top", "-1000px");
 });
-function navTab() {
-		var childHpx = $('nav#m-menu ul#nav li').css("height");
-		var childH = childHpx.replace("px", "");
-		var childN = $('nav#m-menu ul#nav li').size();
-		var parentH = ((childH*-1)*(childN*1));
-		if ( $('#navTab').hasClass("active") ) {
-			$('nav#m-menu').css("top", parentH + "px");
-			$('#navTab').removeClass("active");
-		} else {
-			$('nav#m-menu').css("top", "0");
-			$('#navTab').addClass("active");
-		}
-		return false;
-	}
-	
+
+
+// IE drop down fix	
+sfHover = function () {
+    var e = document.getElementById("nav");
+    if (e != null) {
+        var t = e.getElementsByTagName("LI");
+        for (var n = 0; n < t.length; n++) {
+            t[n].onmouseover = function () {
+                this.className += " sfhover"
+            };
+            t[n].onmouseout = function () {
+                this.className = this.className.replace(new RegExp(" sfhover\\b"), "")
+            }
+        }
+    }
+};
+if (window.attachEvent) window.attachEvent("onload", sfHover)
+
+// end IE drop down fix	

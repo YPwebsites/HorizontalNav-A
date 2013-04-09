@@ -1,6 +1,6 @@
-/*YP Horizontal Framework A v3.2 - 3-19-2013
+/*YP Horizontal Framework B v1 - 4/4/2013
 fixed calculators and typography 
-MODULE STYLING  added 4/4/2013
+MODULE STYLING added 4/4/2013
 Updated mobile menu 4/5/2013
  */
 
@@ -246,10 +246,6 @@ a:focus {
 
 
 /* layout */
-
-
-	
-	
 	
 p.m-logo {
 	text-align: center;
@@ -264,13 +260,17 @@ p.m-logo {
 	}	
 	
 
-#wrapper-header, #wrapper-content, #wrapper-footer, #wrapper-copyright { 
+#wrapper-header, #wrapper-content, #wrapper-footer, #wrapper-copyright, #wrapper-menu { 
 	width:100%;
 	 position:relative;
  }
  
-
- 
+#wrapper-menu {
+	background-color: #999;
+	display:inline-block;
+	z-index:400;
+	}
+	
 #wrapper-footer {
 	background-color:#666;
 	padding: 10px 0px;
@@ -291,12 +291,12 @@ p.m-logo {
 /* logo */
 
 #logo {
-	font-size: 35px;
-	line-height: 45px;
-	text-align:left;
+	font-size: 45px;
+	line-height: 120%;
+	text-align:center;
 	text-transform:uppercase;
-	font-weight:bold;
-	padding: 15px 0px;
+	font-weight:normal;
+	padding: 20px 0px;
 	}
 	
 #logo a, #logo a:hover {
@@ -305,19 +305,42 @@ p.m-logo {
 	}
 	
 	
-
-	
-/* Phone */
+/* Phone this div must expand. Style with CSS or use the sliding door css technique  */
 #phone-number {
 	font-size: 25px;
 	line-height: 35px;
-	text-align:right;
+	text-align:center;
 	text-transform:uppercase;
-	color:#666;	
-	padding:15px 0px;
+	padding:5px 20px;
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	z-index:200;
+	border-radius: 10px;
+	background-color:#666;
 	}
 	
-#m-phone-number {display:none;}	
+#phone-number, #phone-number a, #phone-number a:hover {color:#fff; text-decoration:none; }	
+
+
+/* mobile phone number */	
+#m-phone-number {
+	display:none;
+	
+	position:relative;
+	font-size: 25px;
+	line-height: 35px;
+	text-align:center;
+	text-transform:uppercase;
+	padding:5px 0px;
+	border-radius: 10px;
+	background-color:#666;
+	width:75%;
+	clear:left;
+	margin:10px auto;
+	}	
+	
+#m-phone-number, #m-phone-number a, #m-phone-number a:hover {color:#fff; text-decoration:none; }	
 
 /* header image */
 #header-image-container {margin-top: 10px; margin-bottom: 10px; position:relative;}
@@ -343,6 +366,8 @@ img#siteMainDynHeaderImage1 { width:100%; height:auto;}
 
     /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
     @media only screen and (min-width: 480px) and (max-width: 767px) {	
+			#phone-number { display:none;}
+			#m-phone-number { display:block;}	
 		}
 
     /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -351,6 +376,9 @@ img#siteMainDynHeaderImage1 { width:100%; height:auto;}
 			max-width:300px;
 			height:auto;		
 			}
+			
+		  #phone-number { display:none;}	
+		  #m-phone-number { display:block;}	
 		}	
 
 
@@ -365,7 +393,6 @@ img#siteMainDynHeaderImage1 { width:100%; height:auto;}
 to best suit your design. */
 
 #menu {
-	background-color:#878787;
 	position:relative;
 	z-index:400;
 	}
@@ -458,13 +485,9 @@ ul#nav {
 				 
 		#navTab {display:none;}
 
-
-
 /* Navigation  media queries */
 
      @media only screen and (max-width: 766px) {
-		 
-	  #menu { display:none; }
 	 
 	 a#navTab /* mobile menu open button */{
 		display:block;
@@ -621,6 +644,8 @@ ul#nav {
 
 
 
+
+
 /* 10.FOOTER AREA */
 
 /* mirror module for utility nav */
@@ -754,7 +779,7 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 .widget-wrapper {}
 .widget-title {}
 .widget-body {}
-.diy-widget {min-height:25px;}
+.diy-widget {min-height:30px;}
 
 /* picture+text widget */
 .image_wrapper.free-image-left{
@@ -860,9 +885,8 @@ div.widget-button:hover{
     	height: 480px;
     }
 }
+
 .widget-wrapper{margin:7px;}
-
-
 
 
 /* back to top */
@@ -926,12 +950,10 @@ div.widget-button:hover{
 	}
 	
 textarea { resize:vertical; max-height:200px; min-height:75px;	}	
-
 /* end forms */
 
 
 /* gallery */ 
-
 
 .es-carousel ul li img {cursor:pointer;}
 
@@ -1242,7 +1264,6 @@ color: #fff !important;
 height: 16px !important;
 }
 
-
 /* --------------- begin Websplanet module fixes --------------- */
 
 /* MODULE STYLING 4/4/2013 */
@@ -1306,8 +1327,7 @@ ul#FAQ_category_list span p span {
 	/* margin: 0; */
 	}
 	
-/* end dark background module fixes */ 
-
+/* end dark background module fixes */
 
 .jobs-title,
 .jobs-title:hover {
