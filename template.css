@@ -16,7 +16,7 @@ body {
 	font-family:Verdana, Geneva, sans-serif;
 	
 	}
-	body#mysite { 
+	body { 
 		/* Set background image POSITION and REPEAT here! */
 		background: #add1d6;		
 		}
@@ -296,17 +296,17 @@ p.m-logo {
 /* logo */
 
 #logo {
+	padding: 15px 0px;
+	}
+	
+#logo a, #logo a:hover, #logo a div, #logo a:hover div {
+	text-decoration:none;
+	color:#fff;
 	font-size: 35px;
 	line-height: 45px;
 	text-align:left;
 	text-transform:uppercase;
 	font-weight:bold;
-	padding: 15px 0px;
-	}
-	
-#logo a, #logo a:hover {
-	text-decoration:none;
-	color:#fff;
 	}
 	
 	
