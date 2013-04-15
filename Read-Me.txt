@@ -1,0 +1,1 @@
+This is the base framework for a horizontal navigation design. This frame work has the navigation set up below the header image.
