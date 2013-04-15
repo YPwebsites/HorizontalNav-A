@@ -55,7 +55,10 @@ $(document).ready(function(){
 
 <!-- begin mobile phone # -->
 <div id="m-phone-number">
-    <a href="tel:{PHONE}" class="phone-header-button">{PHONE}</a>
+    <a href="tel:{PHONE}" class="phone-header-button">
+        <div class="tagline2"><!-- {Tagline_2} --> Call Now</div>
+        <div>{PHONE}</div>
+    </a>
 </div> 
 <!-- end mobile phone # -->
 
@@ -101,10 +104,12 @@ $(document).ready(function(){
     <header id="header" class="sk-container">
         <div id="logo" class="twelve columns">
         	<a href="#">Company Name</a>
+            <div class="slogan"><!-- {Tagline_1} -->Your Slogan Goes Here</div>
         </div><!-- end logo -->
         
         <div id="phone-number" class="four columns">
-        	404-555-5555
+        	<div class="tagline2"><!-- {Tagline_2} --> Call Now</div>
+            <div>404-555-5555</div>
         </div><!-- end phone -->
     
   		<nav id="menu" class="sixteen columns">

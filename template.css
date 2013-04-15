@@ -84,6 +84,7 @@ address {
 div {
 	font-size: 14px;
 	line-height: 160%;
+	color: black;
 }
 	
 	/* 3a. Websplanet widget typography 
@@ -308,20 +309,23 @@ p.m-logo {
 	text-transform:uppercase;
 	font-weight:bold;
 	}
+div.slogan {	
 	
-	
-
+}
 	
 /* Phone */
+/* positioning and box model styling go here */
 #phone-number {
+	padding:15px 0px;
+	}
+/* font styling goes here */
+#phone-number div {
 	font-size: 25px;
 	line-height: 35px;
 	text-align:right;
 	text-transform:uppercase;
-	color:#666;	
-	padding:15px 0px;
-	}
-	
+	color:#666;
+}
 #m-phone-number {display:none;}	
 
 /* header image */
@@ -667,7 +671,9 @@ div#copyright {
 	color:#fff;
 	width:95%;
 }
-
+div#copyright a{
+	color: red;
+}
 div#copyright br {
 	display:none;
 	}
@@ -756,7 +762,7 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 
 /* Widgets */
 .widget-element {clear:left !important;}
-.widget-wrapper {}
+.widget-wrapper { margin: 10px 15px !important; }
 .widget-title {}
 .widget-body {}
 .diy-widget {min-height:25px;}
@@ -1137,6 +1143,16 @@ li.adress-block-field {
 	margin-right: 2%;
 	width: 48%;
 }
+/* Contact Form */
+.contact-us label {
+	padding-bottom: 0px;
+}
+.contact-us li {
+	margin-bottom: 6px;
+}
+.contact-us input[type="submit"] {
+	margin-top: 0px;
+}
 
 /* Calculators */
 div.calc-input-container input[type=text] { /* remove styled margin-bottom, it pushes sub-labels down */
@@ -1240,7 +1256,14 @@ div.unit-calc li.unit-menu ul.unit-type li a.active, div.unit-calc li.unit-menu 
 }
 /* Payment Method Fixes */
 ul.PaymentMethod_widget  label {display:none;}
-li.checkboxPaymentMethod {margin: 0px 10px 0px 0px !important;}
+.PaymentMethod_widget .checkboxPaymentMethod span {
+	height: 40px;
+	width: 62px;
+}
+li.checkboxPaymentMethod {
+	margin: 0px !important;
+	width: 62px !important;
+}
 
 /* Guestbook fixes */
 .diy-guestbook-form input, .diy-guestbook-form textarea {
@@ -1384,6 +1407,7 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inne
 div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
 	width:45% !important;
 	float:left !important;
+	margin-right: 0 !important;
 }	
 	 
 @media screen and (max-width: 767px) {
@@ -1391,5 +1415,6 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
 		width:auto !important;
 		float:left !important;
+		margin-right: 15px !important;
 	}
 }
