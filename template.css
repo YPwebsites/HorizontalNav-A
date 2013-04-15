@@ -85,6 +85,7 @@ address {
 div {
 	font-size: 14px;
 	line-height: 160%;
+	color: black;
 }
 	/* 3a. Websplanet widget typography 
 		   Contact Conor Kelly or Ian Glaze with questions.
@@ -311,11 +312,8 @@ p.m-logo {
 	
 	
 /* Phone this div must expand. Style with CSS or use the sliding door css technique  */
+/* positioning and box model styling go here */
 #phone-number {
-	font-size: 25px;
-	line-height: 35px;
-	text-align:center;
-	text-transform:uppercase;
 	padding:5px 20px;
 	position:absolute;
 	right:20px;
@@ -324,8 +322,17 @@ p.m-logo {
 	border-radius: 10px;
 	background-color:#666;
 	}
-	
-#phone-number, #phone-number a, #phone-number a:hover {color:#fff; text-decoration:none; }	
+/* font styling goes here */
+#phone-number div, 
+#phone-number a div, 
+#phone-number a:hover div {
+	font-size: 25px;
+	line-height: 35px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff; 
+	text-decoration:none; 
+}	
 
 
 /* mobile phone number */	
@@ -333,10 +340,6 @@ p.m-logo {
 	display:none;
 	
 	position:relative;
-	font-size: 25px;
-	line-height: 35px;
-	text-align:center;
-	text-transform:uppercase;
 	padding:5px 0px;
 	border-radius: 10px;
 	background-color:#666;
@@ -345,7 +348,16 @@ p.m-logo {
 	margin:10px auto;
 	}	
 	
-#m-phone-number, #m-phone-number a, #m-phone-number a:hover {color:#fff; text-decoration:none; }	
+#m-phone-number div,
+#m-phone-number a div,
+#m-phone-number a:hover div {
+	font-size: 25px;
+	line-height: 35px;
+	text-align:center;
+	text-transform:uppercase;
+	color:#fff; 
+	text-decoration:none;
+}	
 
 /* header image */
 #header-image-container {margin-top: 10px; margin-bottom: 10px; position:relative;}
@@ -775,7 +787,7 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 
 /* Modules */
 
-.module-wrapper {}
+.module-wrapper {margin: 10px 15px !important;}/* Column Gutter fix (per request from Zuzana) */
 .module-title {}
 .module-content {}
 
@@ -1164,6 +1176,16 @@ li.adress-block-field {
 	margin-right: 2%;
 	width: 48%;
 }
+/* Contact Form */
+.contact-us label {
+	padding-bottom: 0px;
+}
+.contact-us li {
+	margin-bottom: 6px;
+}
+.contact-us input[type="submit"] {
+	margin-top: 0px;
+}
 
 /* Calculators */
 div.calc-input-container input[type=text] { /* remove styled margin-bottom, it pushes sub-labels down */
@@ -1284,6 +1306,18 @@ color: #fff !important;
 height: 16px !important;
 }
 
+/* Clean up/tighten payment options */
+ul.PaymentMethod_widget  label {display:none;}
+.PaymentMethod_widget .checkboxPaymentMethod span {
+	height: 40px;
+	width: 62px;
+}
+li.checkboxPaymentMethod {
+	margin: 0px !important;
+	width: 62px !important;
+}
+
+
 /* --------------- begin Websplanet module fixes --------------- */
 
 /* MODULE STYLING 4/4/2013 */
@@ -1399,6 +1433,7 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inne
 div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
 	width:45% !important;
 	float:left !important;
+	margin-right: 0 !important;
 }	
 	 
 @media screen and (max-width: 767px) {
@@ -1406,5 +1441,6 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
 		width:auto !important;
 		float:left !important;
+		margin-right: 15px !important;
 	}
 }
