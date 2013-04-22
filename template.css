@@ -1,13 +1,13 @@
-/*YP Horizontal Framework B v1 - 4/4/2013
+/*YP Horizontal Framework B v2.1 - 4/4/2013
 fixed calculators and typography 
 MODULE STYLING added 4/4/2013
 Updated mobile menu 4/5/2013
+Markup-Cleanup 4/22/2013
  */
 
 @import url("gfx/wp-skeleton.css"); 
 
 header, footer, nav, section, article {display: block;}
-
 
 body {
 	margin: 0;
@@ -33,41 +33,29 @@ h2, h2 span, h2 font span,
 h3, h3 span, h3 font span, 
 h4, h4 span, h4 font span, 
 h5, h5 span, h5 font span, 
-h6, h6 span, h6 font span
- {
+h6, h6 span, h6 font span {
 	font-weight:normal;
 	margin-bottom : 15px;
 	line-height: 120%;
-	}
-
+}
 h1, h1 span, h1 font span { 
 	font-size : 34px; 
-	 
-	}
-
+}
 h2, h2 span, h2 font span{ 	
 	font-size : 30px; 
-	
-	}
-
+}
 h3, h3 span, h3 font span {	
 	font-size : 28px; 
-	
-	}
-
+}
 h4, h4 span, h4 font span { 	
 	font-size : 24px; 
-	 
-	}
-
+}
 h5, h5 span, h5 font span { 
 	font-size : 20px;  
-	
-	}
-
+}
 h6, h6 span, h6 font span { 
 	font-size : 20px; 
-	}
+}
 
 /* 3.TYPOGRAPHY */
 
@@ -84,7 +72,6 @@ address {
 /* add text styling to divs as Websplanet loves to wrap text in divs throughout the platform, just don't include a margin */
 div {
 	font-size: 14px;
-	line-height: 160%;
 	color: black;
 }
 	/* 3a. Websplanet widget typography 
@@ -134,125 +121,99 @@ div {
 	div.diy-f-spot div.calc-input-container, 
 	div.diy-f-spot div.calc-input-container span {
 		color: black; /* Replace with theme specific "dark" text color */
-	}
-	
-	
-	
-	
-	
-	
-p, span {line-height:160%;}
-
+	}	
+p, span, div {
+	line-height:160%;
+}
 ul, 
 ol { 
 	margin : 0 0 1.5em 24px; 
 	padding-left : 24px; 
 	list-style-position: outside;
-	}
-
+}
 ul { 
 	list-style-type : disc; 
-	}
-
+}
 ol { 
 	list-style-type : decimal; 
-	}
-
+}
 ul li , 
 ol li  { 
 	margin : 0;
 	font-size : 14px; 
 	line-height:140%;
-	}
-
+}
 dl, 
 dd { 
 	margin-bottom : 1.5em;
-	}
-
+}
 dt { 
 	font-weight : normal; 
-	}
-
+}
 blockquote  { 
 	margin : 0 0 1.5em 24px; 
 	padding-left : 24px; 
 	border-left : 1px solid rgb(200,200,200); /* hex code can be used here too */
 	font-style : italic; 
-	}
-
+}
 blockquote:before, 
 blockquote:after, 
 q:before, 
 q:after {
 	content : '';
 	content : none; 
-	}
-
+}
 b, 
-strong	{ 
+strong { 
 	font-weight : bold; 
-	}
-
+}
 i, 
 em { 
 	font-style : italic; 
-	}
-
+}
 sup, 
 sub { 
 	position : relative;
 	font-size : 75%; 
 	line-height : 0; 
-	}
-
+}
 sup { 
 	top : -.5em; 
-	}
-
+}
 sub { 
 	bottom : -.25em; 
-	}
-
+}
 address { 
 	font-style : normal;
-	}
-
-
+}
 hr { 
 	border: solid #ddd; 
 	border-width: 1px 0 0; 
 	clear: both; 
 	margin: 10px 0 30px; 
 	height: 0; 
-	}
-
+}
 
 /* 4.LINKS */
-
 a, 
 a:visited {
 	outline : none;
 	color : #00F; 
 	text-decoration : underline;
-	}
- 
+}
 a:hover { 
 	outline : none;
 	color : rgb(40,40,40); /* hex code can be used here too */
 	text-decoration : underline; 
-	}
- 
+}
 a:active, 
 a:focus { 
 	outline : none;
 	color : rgb(0,0,0); /* hex code can be used here too */
 	text-decoration : underline;
-	}
-
+}
 
 /* layout */
-	
 p.m-logo {
 	text-align: center;
 	font-size:18px;
@@ -263,39 +224,36 @@ p.m-logo {
 	margin:0px;
 	line-height:normal;
 	width:auto;
-	}	
-	
-
+}	
 #wrapper-header, #wrapper-content, #wrapper-footer, #wrapper-copyright, #wrapper-menu { 
 	width:100%;
-	 position:relative;
- }
- 
+	position:relative;
+}
 #wrapper-menu {
 	background-color: #999;
 	display:inline-block;
 	z-index:400;
-	}
-	
+}
+#wrapper-header { }
+#wrapper-content { } 
+div#wrapper-content { }
 #wrapper-footer {
 	background-color:#666;
 	padding: 10px 0px;
-	} 
-
+} 
 #wrapper-copyright {
 	display:inline-block;
 	background-color: #999;
 	padding: 10px 0px;
-	}
+}
+#header { }
 
-#header {
- 
+#content {
+	padding:15px 0px;
+	min-height:100px;
 }
 
-#content {padding:15px 0px; min-height:100px;}
-
 /* logo */
-
 #logo {
 	padding: 20px 0px;
 	}
@@ -308,10 +266,10 @@ p.m-logo {
 	font-weight:normal;
 	text-decoration:none;
 	color:#fff;
-	}
-	
-	
-/* Phone this div must expand. Style with CSS or use the sliding door css technique  */
+}
+div.slogan { }
+
+/* Phone: this div must expand. Style with CSS or use the sliding door css technique  */
 /* positioning and box model styling go here */
 #phone-number {
 	padding:5px 20px;
@@ -321,7 +279,7 @@ p.m-logo {
 	z-index:200;
 	border-radius: 10px;
 	background-color:#666;
-	}
+}
 /* font styling goes here */
 #phone-number div, 
 #phone-number a div, 
@@ -333,12 +291,9 @@ p.m-logo {
 	color:#fff; 
 	text-decoration:none; 
 }	
-
-
 /* mobile phone number */	
 #m-phone-number {
 	display:none;
-	
 	position:relative;
 	padding:5px 0px;
 	border-radius: 10px;
@@ -346,8 +301,7 @@ p.m-logo {
 	width:75%;
 	clear:left;
 	margin:10px auto;
-	}	
-	
+}	
 #m-phone-number div,
 #m-phone-number a div,
 #m-phone-number a:hover div {
@@ -360,96 +314,91 @@ p.m-logo {
 }	
 
 /* header image */
-#header-image-container {margin-top: 10px; margin-bottom: 10px; position:relative;}
-
-#header-image-wrapper-1 {} /* WP wraps #siteMainDynHeaderImage1 with #header-image-wrapper-1 by defult but removes it once the image is replaced */
-
-img#siteMainDynHeaderImage1 { width:100%; height:auto;}
-
+/* WP wraps #siteMainDynHeaderImage1 with #header-image-wrapper-1 by defult but removes it once the image is replaced; this may change in the future */
+#header-image-wrapper-1 {
+	margin-top: 10px; 
+	margin-bottom: 10px; 
+	position:relative;
+} 
+img#siteMainDynHeaderImage1 { 
+	width:100%; 
+	height:auto;
+}
 
 /* Header media queries */
-
- /* Smaller than standard 960 (devices and browsers) */
-    @media only screen and (max-width: 959px) {}
-
-    /* Tablet Portrait size to standard 960 (devices and browsers) */
-    @media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {
-			#phone-number { text-align:center;}
-			#logo { text-align:center;}
-		}
-
-    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-    @media only screen and (min-width: 480px) and (max-width: 767px) {	
-			#phone-number { display:none;}
-			#m-phone-number { display:block;}	
-		}
-
-    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-    @media only screen and (max-width: 479px) { 
-	     #siteMainDynLogo /*this is for the mobile logo image*/ {
-			max-width:300px;
-			height:auto;		
-			}
-			
-		  #phone-number { display:none;}	
-		  #m-phone-number { display:block;}	
-		}	
-
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	#phone-number {
+		display:none;
+	}
+	#logo {
+		text-align:center;
+	}
+	#m-phone-number {
+		display:block;
+	}	
+}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) { 
+	#siteMainDynLogo /*this is for the mobile logo image*/ {
+		max-width:300px;
+		height:auto;		
+	}	
+}	
 
 /* footer */
-
-#footer-area {padding:10px 0px;}
-
+#footer-area {
+	padding:10px 0px;
+}
 
 /* 5.NAVIGATION/MENU */
-
-/* Feel free to change up this area as you see fit in order
-to best suit your design. */
-
+/* Feel free to change up this area as you see fit in order to best suit your design. */
 #menu {
 	position:relative;
 	z-index:400;
-	}
-
+}
 ul#nav {
 	margin: 0;
 	padding: 0;
 	width:auto;
 	}
+/* start first level nav items */
 	ul#nav li {
 		float: left;
 		padding: 0;
 		list-style: none;
 		list-style-image: none;
-		
-		}
-		ul#nav li.last {
-			}
-		ul#nav li.first {
-			}
-		ul#nav li a {
-			font-size: 14px;
-			text-decoration: none;
-			line-height:45px; /* line height is better than top and bottom padding */
-			display: block;
-			text-align: left;
-			padding: 0px 15px;
-			white-space: nowrap;
-			text-transform: uppercase;
-			color: #fff;
-			}
-		/* yes, you can combine the bottom two styles if you would like or need to */	
-		ul#nav li.current a {
-		    color: #000;
-			}
-		ul#nav li a:hover {
-			color: #F00;
-			}
-			
-		/* second level dropdown */	
+	}
+	ul#nav li.last { }
+	ul#nav li.first { }
+	ul#nav li a {
+		font-size: 14px;
+		text-decoration: none;
+		line-height:45px; /* line height is better than top and bottom padding */
+		display: block;
+		text-align: left;
+		padding: 0px 15px;
+		white-space: nowrap;
+		text-transform: uppercase;
+		color: #fff;
+	}
+	/* yes, you can combine the bottom two styles if you would like or need to */	
+	ul#nav li.current a {
+		color: #000;
+	}
+	ul#nav li a:hover {
+		color: #F00;
+	}
+	/* first and last nav links in first level only */
+	ul#nav > li.last > a { }
+	ul#nav > li.first > a { }
+/* end first level nav items */		
+	
+/* start second level nav items */				
 		ul#nav li ul { /* second-level lists */
 			position: absolute;
 			width: 10em;
@@ -457,54 +406,76 @@ ul#nav {
 			margin:0px;
 			padding:0px;
 		}
-		
-		ul#nav li ul li a, ul#nav li.current ul li a { /* second level dropdown buttons */
+		ul#nav li ul li a,
+		ul#nav li.current ul li a { /* second level dropdown buttons */
 			width:200px;
 			background-color: #666;
 			border-bottom: 1px solid #999;
 			line-height:26px;
 			color:#fff;
-			}
-		
-		ul#nav li ul li a:hover, ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
+		}
+		ul#nav li ul li a:hover,
+		ul#nav li.current ul li a:hover { /* second level dropdown button hover state */	
 			background-color: red;
 			border-bottom: 1px solid #900;
 			color:#fff;
-			}
-		
-						ul#nav li ul li ul li a, ul#nav li.current ul li ul li a { /* third level dropdown buttons */
-							width:200px;
-							background-color: #00F;
-							border-bottom: 1px solid #06F;
-							line-height:35px;
-							color:#fff;
-							}
-						
-						ul#nav li ul li ul li a:hover, ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
-							background-color: red;
-							border-bottom: 1px solid #900;
-							color:#fff;
-							}
-		 
-		ul#nav li ul li ul { /* third-and-above-level lists */
-			margin: -1em 0 0 200px;
 		}
-		 
-		ul#nav li:hover ul li ul, ul#nav li:hover ul li ul li ul, ul#nav li.sfhover ul li ul, ul#nav li.sfhover ul li ul li ul {
+		/* first and lasts in drop down */
+		ul#nav li ul li.first a, 
+		ul#nav li.current ul li.first a { }
+		ul#nav li ul li.last a, 
+		ul#nav li.current ul li.last a { }
+/* end second level nav items */
+
+/* start third level nav items */	
+			ul#nav li ul li ul { /* third-and-above-level lists */
+				margin: -1em 0 0 200px;
+			}	
+			ul#nav li ul li ul li a,
+			ul#nav li.current ul li ul li a { /* third level dropdown buttons */
+				width:200px;
+				background-color: #00F;
+				border-bottom: 1px solid #06F;
+				line-height:35px;
+				color:#fff;
+			}
+			ul#nav li ul li ul li a:hover, 
+			ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
+				background-color: red;
+				border-bottom: 1px solid #900;
+				color:#fff;
+			}
+		 	/* first and lasts in drop down */
+			ul#nav li ul li ul li.first a, 
+			ul#nav li.current ul li ul li a { }
+			ul#nav li ul li ul li.last a, 
+			ul#nav li.current ul li ul li a { }
+/* end third level nav items */
+		
+		ul#nav li:hover ul li ul, 
+		ul#nav li:hover ul li ul li ul,
+		ul#nav li.sfhover ul li ul, 
+		ul#nav li.sfhover ul li ul li ul {
 			left: -999em;
 		}
 		 
-		ul#nav li:hover ul, ul#nav li ul li:hover ul, ul#nav li ul li ul li:hover ul, ul#nav li.sfhover ul, ul#nav li ul li.sfhover ul, ul#nav li ul li ul li.sfhover ul { /* lists nested under hovered list items */
+		ul#nav li:hover ul, 
+		ul#nav li ul li:hover ul, 
+		ul#nav li ul li ul li:hover ul, 
+		ul#nav li.sfhover ul, 
+		ul#nav li ul li.sfhover ul, 
+		ul#nav li ul li ul li.sfhover ul { /* lists nested under hovered list items */
 			left: auto;
 		}
-
-		#m-menu { display:none; }
-				 
+/* hide mobile elements by default */
+		#m-menu { display:none; }	 
 		#navTab {display:none;}
 
 /* Navigation  media queries */
 
-     @media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
+	 #wrapper-menu {display:none;}
+	 #menu { display:none; }
 	 
 	 a#navTab /* mobile menu open button */{
 		display:block;
@@ -517,95 +488,81 @@ ul#nav {
 		background-repeat:no-repeat;
 		background-position:top center;
 		z-index:900;
-		}	
-				
-	a#navTab:hover {
-		} 
-		
-	 a#navTab.active {
-		 background-position:bottom center;
-		 }
-	 			 
-	 #wrapper-menu {display:none;}
-	 		 
-	 #m-wrapper-menu {  
-		   display:inline-block;
-		   width:100%;
-		   text-align:center;
-		   background: -moz-linear-gradient( 		top, 		#a3a3a3 0%, 		#3b3b3b 50%, 		#242424 50%, 		#000000);
-			background: -webkit-gradient( 		linear, left top, left bottom, 		from(#a3a3a3), 		color-stop(0.50, #3b3b3b), 		color-stop(0.50, #242424), 		to(#000000));
-			-moz-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
-			-webkit-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
-			box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
-		}	
-		 
-	  #m-menu {
-			height: auto;
-			overflow: visible;
-			padding: 0;
-			position: relative;
-			width: 100%;
-			z-index: 800;
-			display: block;
-			margin:0 auto;
-		}
-			
-	   #m-menu-content {
-			display: none; /* hides the menu */
-		}	
-				 	
-	  #m-menu ul#nav {
-			margin: 0;
-			padding: 0;
-			width:auto;
-			background-color:#CCC;
-			
-			box-shadow: 		0px 2px 4px rgba(000,000,000,0.5);
-		}
-		
-	  #m-menu ul#nav li {
-			float: none;
-			padding: 0;
-			list-style: none;
-			list-style-image: none;	
-		}
-		
-		#m-menu ul#nav li.last {
-			border-left: 0px;
-			border-right: 0px;
-			}
-			
-		#m-menu ul#nav li.first {
-			border-left: 0px;
-			border-right: 0px;
-			}
-			
-		#m-menu ul#nav li a {
-			font-size: 14px;
-			text-decoration: none;
-			line-height:35px; /* line height is better than top and bottom padding */
-			display: block;
-			text-align: left;
-			padding: 0px 15px;
-			white-space: nowrap;
-			text-transform: uppercase;
-			color: #666;
-			border-bottom: 1px solid #b7b7b7;
-			border-top: 1px solid #dddddd;
-			border-left: 0px;
-			border-right: 0px;
-			}
-			
-		/* yes, you can combine the bottom two styles if you would like or need to */	
-		#m-menu ul#nav li.current a {
-		    color: #000;
-			}
-			
-		#m-menu ul#nav li a:hover {
-			color: #000;
-			}
-			
-		/* second level dropdown */	
+	}			
+	a#navTab:hover { } 	
+	a#navTab.active {
+		background-position:bottom center;
+	}		 
+	#m-wrapper-menu {  
+	   	display:inline-block;
+	   	width:100%;
+	   	text-align:center;
+	   	background: -moz-linear-gradient( top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, #000000);
+		background: -webkit-gradient( linear, left top, left bottom, from(#a3a3a3), color-stop(0.50, #3b3b3b), color-stop(0.50, #242424), to(#000000));
+		-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+		-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+		box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+	}	 
+	#m-menu {
+		height: auto;
+		overflow: visible;
+		padding: 0;
+		position: relative;
+		width: 100%;
+		z-index: 800;
+		display: block;
+		margin:0 auto;
+	}	
+	#m-menu-content {
+		display: none; /* hides the menu */
+	}			 	
+	#m-menu ul#nav {
+		margin: 0;
+		padding: 0;
+		width:auto;
+		background-color:#CCC;
+		box-shadow: 0px 2px 4px rgba(000,000,000,0.5);
+	}
+/* start first level nav items */		
+	#m-menu ul#nav li {
+		float: none;
+		padding: 0;
+		list-style: none;
+		list-style-image: none;	
+	}
+	#m-menu ul#nav li.last {
+		border-left: 0px;
+		border-right: 0px;
+	}
+	#m-menu ul#nav li.first {
+		border-left: 0px;
+		border-right: 0px;
+	}
+	#m-menu ul#nav li a {
+		font-size: 14px;
+		text-decoration: none;
+		line-height:35px; /* line height is better than top and bottom padding */
+		display: block;
+		text-align: left;
+		padding: 0px 15px;
+		white-space: nowrap;
+		text-transform: uppercase;
+		color: #666;
+		border-bottom: 1px solid #b7b7b7;
+		border-top: 1px solid #dddddd;
+		border-left: 0px;
+		border-right: 0px;
+	}
+	/* yes, you can combine the bottom two styles if you would like or need to */	
+	#m-menu ul#nav li.current a {
+		color: #000;
+	}
+	#m-menu ul#nav li a:hover {
+		color: #000;
+	}
+/* end first level nav items */		
+
+/* start second level nav items */		
 		#m-menu ul#nav li ul { /* second-level lists */
 			position: relative;
 			display:block;
@@ -614,8 +571,8 @@ ul#nav {
 			padding:0px;
 			left:0px;
 		}
-		
-		#m-menu ul#nav li ul li a, #m-menu ul#nav li.current ul li a { /* second level dropdown buttons */
+		#m-menu ul#nav li ul li a, 
+		#m-menu ul#nav li.current ul li a { /* second level dropdown buttons */
 			width:auto;
 			background-color: #e0e0e0;
 			border-top: 1px solid #efefef;
@@ -625,43 +582,36 @@ ul#nav {
 			padding: 0px 15px 0px 30px;
 			text-transform: capitalize;
 			font-size: 12px;
-			}
-		
-		#m-menu ul#nav li ul li a:hover, #m-menu ul#nav li.current ul li a:hover { /* second level dropdown button hover state */
+		}
+		#m-menu ul#nav li ul li a:hover, 
+		#m-menu ul#nav li.current ul li a:hover,
+		#m-menu ul#nav li ul li a:active, 
+		#m-menu ul#nav li.current ul li a:active { /* second level dropdown button hover state */
 			color:#000;
-			}
-		
-						#m-menu ul#nav li ul li ul li a, #m-menu ul#nav li.current ul li ul li a { /* third level dropdown buttons */
-							width:100%;
-							background-color: #00F;
-							border-bottom: 1px solid #06F;
-							line-height:30px;
-							color:#fff;
-							}
-						
-						#m-menu ul#nav li ul li ul li a:hover, #m-menu ul#nav li.current ul li ul li a:hover { /* third level dropdown button hover state */						
-							background-color: red;
-							border-bottom: 1px solid #900;
-							color:#fff;
-							}
-		 
-		#m-menu ul#nav li ul li ul { /* third-and-above-level lists */
+		}
+/* end second level nav items */	
+
+/* hide third level nav items */		
+			#m-menu ul#nav li ul li ul { /* third-and-above-level lists */
 				display:none;
-		}
-		 
-		#m-menu ul#nav li:hover ul li ul, #m-menu ul#nav li:hover ul li ul li ul, #m-menu ul#nav li.sfhover ul li ul, #m-menu #nav li.sfhover ul li ul li ul {
-			display:none;
-			left: 0px;
-		}
-		 
-		#m-menu ul#nav li:hover ul, /*#m-menu ul#nav li ul li:hover ul, #m-menu ul#nav li ul li ul li:hover ul*/ #m-menu ul#nav li.sfhover ul, #m-menu ul#nav li ul li.sfhover ul /*, #m-menu ul#nav li ul li ul li.sfhover ul */{ /* lists nested under hovered list items */
-			display:block;
-		}
-    } /* end media query */
-
-
-
-
+			}
+			#m-menu ul#nav li:hover ul li ul, 
+			#m-menu ul#nav li:hover ul li ul li ul, 
+			#m-menu ul#nav li.sfhover ul li ul, 
+			#m-menu #nav li.sfhover ul li ul li ul {
+				display:none;
+				left: 0px;
+			}
+			
+				#m-menu ul#nav li:hover ul, 
+				/*#m-menu ul#nav li ul li:hover ul, 
+				#m-menu ul#nav li ul li ul li:hover ul,*/ 
+				#m-menu ul#nav li.sfhover ul, 
+				#m-menu ul#nav li ul li.sfhover ul /*, 
+				#m-menu ul#nav li ul li ul li.sfhover ul */{ /* lists nested under hovered list items */
+					display:block;
+				}
+} /* end media query */
 
 /* 10.FOOTER AREA */
 
@@ -675,24 +625,21 @@ ul#mirror-menu-module {
 	font-size:12px;
 	text-align:center;
 	font-weight:normal;
-	}
-	ul#mirror-menu-module li {
-		display: inline; /* remove and add float if you want the text left justified */
-		/*float: left;*/
-		padding: 0 5px;
-		list-style: none;
-		text-align: center;
-			}
-	ul#mirror-menu-module a {
-		color:#fff;
-		text-decoration:underline; 
-		}
-		ul#mirror-menu-module a:hover {
-			color:#fff;
-			}
-
-
-
+}
+ul#mirror-menu-module li {
+	display: inline; /* remove and add float if you want the text left justified */
+	/*float: left;*/
+	padding: 0 5px;
+	list-style: none;
+	text-align: center;
+}
+ul#mirror-menu-module a {
+	color:#fff;
+	text-decoration:underline; 
+}
+ul#mirror-menu-module a:hover {
+	color:#fff;
+}
 
 /* YP Copyright */
 div#copyright {
@@ -704,48 +651,46 @@ div#copyright {
 	color:#fff;
 	width:95%;
 }
-
 div#copyright br {
 	display:none;
-	}
-
+}
+div#copyright a { }
 .ypimg {
   float: right;
   margin: 0px 15px 0px 80px;
 }
-
-.ownerlogin {
-	float:left;
-	clear:right;
-	margin-top:12px;
-	}
 	
 @media only screen and (max-width: 767px){
-	      div#copyright {
-			text-align: center;
-			font-size:10px;	
-		}
-		
-		div#copyright br {
-	   		display:block;
-		}
-		
-		.ypimg {
-		  float: none;
-		  clear:right;
-		  margin: 10px 0px 10px 0px;
-		}
-		
-		.ownerlogin {
-			float: none;
-			clear: none;
-			margin:auto;
-			display:none;
-			}
-     }			
+	div#copyright {
+		text-align: center;
+		font-size:10px;	
+	}
+	
+	div#copyright br {
+		display:block;
+	}
+	.ypimg {
+		float: none;
+		clear:right;
+		margin: 10px 0px 10px 0px;
+	}
+}			
 
 /* 10 b. Form Styling */
-
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+textarea {
+	width: 95%;
+}
+select {
+	width: 100%;	
+}
+@media only screen and (max-width: 767px) {
+	select {
+		width: 98%;	
+	}
+}
 label {}
 input[type="text"] {}
 input[type="text"]:focus {} 
@@ -781,13 +726,9 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 
 /* 11.WEBSPLANET DEFAULT */
 
-
-
-
-
 /* Modules */
 
-.module-wrapper {margin: 10px 15px !important;}/* Column Gutter fix (per request from Zuzana) */
+.module-wrapper { }/* Column Gutter fix (per request from Zuzana) */
 .module-title {}
 .module-content {}
 
@@ -802,7 +743,6 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 .image_wrapper.free-image-left{
 	margin-right: 5px;
 }
-
 .image_wrapper.free-image-right{
 	margin-left: 5px;
 }
@@ -876,7 +816,7 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
     display:inherit;
 }
 .widget-button{
-	width:100%; 
+	width:auto; 
 	height:auto; 
 	text-align:center;  
 	z-index:1001;
@@ -885,12 +825,11 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
     border-radius:10px;
 	background-color: #999;
 	line-height: 40px;
-	}
-	
+}
 div.widget-button:hover{
 	cursor:pointer;
 	background-color:#C60;
-	}
+}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .widget-popup{
@@ -902,18 +841,16 @@ div.widget-button:hover{
     	height: 480px;
     }
 }
-
-.widget-wrapper{margin:7px;}
-
+.widget-wrapper{
+	margin:10px 15px !important;
+}
 
 /* back to top */
-
 #back-top {
 	position: fixed;
 	bottom: 30px;
 	right: 10px;
 	z-index: 600;
-	
 }
 #back-top a {
 	width: 42px;
@@ -946,7 +883,6 @@ div.widget-button:hover{
 	-webkit-transition: 1s;
 	-moz-transition: 1s;
 	transition: 1s;
-	
 	border:1px solid #fff;
 }
 #back-top a:hover span {
@@ -957,29 +893,27 @@ div.widget-button:hover{
 
 /* forms */
 
-.form-manager li input[type="text"], .contact-us li input[type="text"] {
+.form-manager li input[type="text"], 
+.contact-us li input[type="text"] {
    width: 98%;
 }
-
 .form-manager label {
 	line-height: 25px;
 	padding-bottom:0px;
-	}
+}
 	
-textarea { resize:vertical; max-height:200px; min-height:75px;	}	
+textarea { 
+	resize:vertical; 
+	max-height:200px; 
+	min-height:75px;
+}	
 /* end forms */
 
-
 /* gallery */ 
-
 .es-carousel ul li img {cursor:pointer;}
-
 /* end gallery */
 
-
-
 /* mobile quick nav buttons */
-
 #m-panel {
 	width:100%;
 	position:fixed;
@@ -989,8 +923,7 @@ textarea { resize:vertical; max-height:200px; min-height:75px;	}
 	z-index: 6666;
 	text-align:center;
 	display:none;
-	}
-	
+}
 a.m-click-phone, a.m-click-mail, a.m-click-map {
 	float:left;
 	height:45px;
@@ -1001,18 +934,23 @@ a.m-click-phone, a.m-click-mail, a.m-click-map {
 	padding: 0px 0px;
 	text-align:center;
 	/* this is the background of quick nav. please do not add left and right borders. They will mess up the widths of the buttons and will not display correctly. */
-	background: -moz-linear-gradient( 		top, 		#a3a3a3 0%, 		#3b3b3b 50%, 		#242424 50%, 		#000000);
-	background: -webkit-gradient( 		linear, left top, left bottom, 		from(#a3a3a3), 		color-stop(0.50, #3b3b3b), 		color-stop(0.50, #242424), 		to(#000000));
-	-moz-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
-	-webkit-box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
-	box-shadow: 		0px 1px 3px rgba(000,000,000,0.5), 		inset 0px 0px 1px rgba(255,255,255,0.6);
-
-	}
-	
-a.m-click-phone, a.m-click-mail, a.m-click-map {width:33%;}
-a.m-click-mail {width:34%;}
-	
-a.m-click-phone span, a.m-click-mail span, a.m-click-map span {
+	background: -moz-linear-gradient( top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, #000000);
+	background: -webkit-gradient( linear, left top, left bottom, from(#a3a3a3), color-stop(0.50, #3b3b3b), color-stop(0.50, #242424), to(#000000));
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+	box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
+}
+a.m-click-phone, 
+a.m-click-mail, 
+a.m-click-map {
+	width:33%;
+}
+a.m-click-mail {
+	width:34%;
+}
+a.m-click-phone span, 
+a.m-click-mail span, 
+a.m-click-map span {
 	height:45px;
 	width:100%;
 	overflow:hidden;
@@ -1023,56 +961,37 @@ a.m-click-phone span, a.m-click-mail span, a.m-click-map span {
 	display:block;
 	padding:0px;
 	text-indent:-9950px;
-	}	
-	
-a.m-click-phone span { 
-background-position:center center;
-	}
+}	
 
+a.m-click-phone span { 
+	background-position:center center;
+}
 a.m-click-mail span{
 	background-position:bottom center;
-	}
-
+}
 a.m-click-map span{
 	background-position:top center;
-	}
-	
-
-
- /* Smaller than standard 960 (devices and browsers) */
-    @media only screen and (max-width: 959px) {}
-
-    /* Tablet Portrait size to standard 960 (devices and browsers) */
-    @media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-    /* All Mobile Sizes (devices and browser) */
-    @media only screen and (max-width: 767px) {
-			
-		}
-
-    /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-    @media only screen and (min-width: 480px) and (max-width: 767px) {	
+}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (max-width: 767px) {	
 	#m-panel {display:block}
 	#copyright {padding-bottom:45px;}
-		}
-
-    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-    @media only screen and (max-width: 479px) { 
-	     #m-panel {display:block}
-		 #copyright {padding-bottom:45px;}
-		}	
+}
 /* end mobile quick nav buttons */
 
-/* --------------- Websplanet widget fixes --------------- */
+/* 
+   -------------------------------------------------------
+   --------------- Websplanet widget fixes --------------- 
+   -------------------------------------------------------
+*/
+
 /* Websplanet mobile fixes */
 form ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
 }
-nav#menu ul li a.hover {
-	
-}
+nav#menu ul li a.hover { }
 /* footer data link */
 a.websplanet {
 	color: #fff;
@@ -1085,7 +1004,9 @@ a.websplanet {
 .footerText {
 	display: none; /* these are just empty spans in the footer area, display none lets .addthis_toolbox to be aligned properly */
 }
-.addthis_default_style .at300b, .addthis_default_style .at300bo, .addthis_default_style .at300m {
+.addthis_default_style .at300b,
+.addthis_default_style .at300bo,
+.addthis_default_style .at300m {
 	margin-top: 4px;
 }
 /* ---------- Start UI styling fixes ---------- */
@@ -1103,31 +1024,27 @@ a.websplanet {
 	font-size: 13px; /*match a, a:visited { styling } */
 	line-height: 16px;
 	margin-bottom: 21px;
-	display: inline-block;
+	display: inline;
 }
-
 /* iframe has height of 0px but makes container div taller than the button */
 iframe#Guesbook_csiframe {
 	display: none;
 }
-
 .reviewSubject h4 {
 	font-size: 20px !important;  /* match h4 styling; requires !important */
 }
-.ypreviews {margin-bottom:30px;}
-
+.ypreviews {
+	margin-bottom:30px;
+}
 /* RSS widget styling --- rss feed widget styeling, typography is completely different */
 .rss-item-title a {
 	font: 20px; /* match h4 styling */
-	color: #2D71E6; /* match link color */
 }
 div.rss ul {
     padding: 0;
 }
-
 div[type=rss_widget] > div.widget-body > div { /* match h3 styling; requires !important */
-	font: 28px/28px "Avenir Regular", Helvetica, Arial, sans-serif !important;
-	
+	font: 28px/28px Helvetica, Arial, sans-serif !important;
 }
 div[type=rss_widget] ul { /* remove indent; requires !important */
 	padding-left: 0 !important; 
@@ -1137,12 +1054,10 @@ div[type=rss_widget] ul { /* remove indent; requires !important */
 	font-size: 13px;
 	line-height: 16px;
 }
-
-
 /* accordion and tabs break grid, this adds a margin to match other "widget-wrapper"s */
 div.diy-f-accordion,
 div.diy-f-tabs {
-	margin: 7px;
+	margin: 10px 15px;
 }
 /* Accordian fixes */
 .diy-f-accordion h3 {
@@ -1151,8 +1066,12 @@ div.diy-f-tabs {
 	padding: 12px 0 12px 36px; /* default is em based */
 }
 /* Payment Method Fixes */
-ul.PaymentMethod_widget  label {display:none;}
-li.checkboxPaymentMethod {margin: 0px 10px 0px 0px !important;}
+ul.PaymentMethod_widget  label {
+	display:none;
+}
+li.checkboxPaymentMethod {
+	margin: 0px 10px 0px 0px !important;
+}
 
 /* Guestbook fixes */
 .diy-guestbook-form input, .diy-guestbook-form textarea {
@@ -1160,10 +1079,23 @@ li.checkboxPaymentMethod {margin: 0px 10px 0px 0px !important;}
     float: left;
 }
 /* ---------- Forms Fixes ----------*/
+.form-manager li input[type="text"], 
+.contact-us li input[type="text"] {
+   width: 98%;
+}
+.form-manager label {
+	line-height: 25px;
+	padding-bottom:0px;
+}
+textarea { 
+	resize:vertical; 
+	max-height:200px; 
+	min-height:75px;
+}
 /* Forms Manager */
 label {
-	    margin-top: 0 !important; /* forms manager sets to 12px */
-	    line-height: 16px !important; /* forms manager sets to 25px */
+	margin-top: 0 !important; /* forms manager sets to 12px */
+	line-height: 16px !important; /* forms manager sets to 25px */
 }
 .form-manager li { /* spaces form feilds better, chunks items together */
 	margin-bottom: 12px !important;
@@ -1197,85 +1129,88 @@ div.calc-input-container {
 div.unit-results ul li input { /* fix width */
 	width: 97%;
 }	
-
 li.calc-param-row label {
   padding: 0 0 5px;
 }
-
-li.calc-param-row, li.calc-instruction-row, li.calc-resault-row 
-  {height:auto !important; margin-bottom:5px;}
-
-li.calc-param-row div.calc-input-container, li.calc-resault-row div.calc-input-container {
-  clear: left;
-  float: left;
+li.calc-param-row, 
+li.calc-instruction-row, 
+li.calc-resault-row {
+	height:auto !important; 
+	margin-bottom:5px;
+}
+li.calc-param-row div.calc-input-container, 
+li.calc-resault-row div.calc-input-container {
+	clear: left;
+	float: left;
+}
+.calculator-btn {
+	float:left;
 }
 
-
-.calculator-btn {float:left;}
-
 /* weight calculator */
-
-div.calories-calc div.calc-input-container span.small {display:none;}
-
-div.calc-input-container #weight_kg, div.calc-input-container #cen {display:none;}
-
-div.calc-input-container span.or {display:none !important;}
-
+div.calories-calc div.calc-input-container span.small {
+	display:none;
+}
+div.calc-input-container #weight_kg, 
+div.calc-input-container #cen {
+	display:none;
+}
+div.calc-input-container span.or {
+	display:none !important;
+}
 div.calories-calc div.calc-input-container input[type="radio"] {
-  border: 0px solid #AACFE4;
-
+	border: 0px solid #AACFE4;
 }
 
 /* conversion calculator */
-
 div.unit-calc li.unit-menu ul.unit-type {
-  display: inline-block;
-  text-align: center;
-  width: 100%;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
 }
 
 div.unit-calc li.unit-menu ul.unit-type li {
-  clear: none !important;
-  display: block;
-  float: left; 
-  text-align: center;
-  font-size: 10px;
-  width:auto !important;
+	clear: none !important;
+	display: block;
+	float: left; 
+	text-align: center;
+	font-size: 10px;
+	width:auto !important;
 }
 
 div.unit-calc li.unit-menu ul.unit-type li a {
-  -moz-border-bottom-colors: none;
-  -moz-border-left-colors: none;
-  -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
-  background-color: #E6E6E6;
-  background-image: linear-gradient(#FFFFFF, #FFFFFF 25%, #E6E6E6);
-  background-repeat: no-repeat;
-  border-color: #CCCCCC #CCCCCC #BBBBBB;
-  border-image: none;
-  border-radius: 4px 4px 4px 4px;
-  border-style: solid;
-  border-width: 1px;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 5px 8px;
-  transition: all 0.1s linear 0s;
-  display: inline;
-  margin: 2px 5px;
-  text-decoration:none;
-  color: #333333;
-  line-height: normal;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #E6E6E6;
+	background-image: linear-gradient(#FFFFFF, #FFFFFF 25%, #E6E6E6);
+	background-repeat: no-repeat;
+	border-color: #CCCCCC #CCCCCC #BBBBBB;
+	border-image: none;
+	border-radius: 4px 4px 4px 4px;
+	border-style: solid;
+	border-width: 1px;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 5px 8px;
+	transition: all 0.1s linear 0s;
+	display: inline;
+	margin: 2px 5px;
+	text-decoration:none;
+	color: #333333;
+	line-height: normal;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 } 
-
-div.unit-calc li.unit-menu ul.unit-type li a.active, div.unit-calc li.unit-menu ul.unit-type li a:hover {
-	 background-image: linear-gradient(#d7d7d7, #d7d7d7 25%, #c7c7c7 );
-	 color:#000;
-	 text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.75);
-     text-decoration:none;
-	}
+div.unit-calc li.unit-menu ul.unit-type li a.active, 
+div.unit-calc li.unit-menu ul.unit-type li a:hover {
+	background-image: linear-gradient(#d7d7d7, #d7d7d7 25%, #c7c7c7 );
+	color:#000;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.75);
+	text-decoration:none;
+}
 
 /* results */
  li.calc-resault-row label {
@@ -1287,27 +1222,10 @@ div.unit-calc li.unit-menu ul.unit-type li a.active, div.unit-calc li.unit-menu 
 .big-clock {
   font-size: 30px !important;
 }
-
-/* --------------- end Websplanet widget fixes --------------- */
-
-/* column percentage */
-
-.diy-percent-width {
-width: auto !important;
-top: 8px !important;
-right: 0px !important;
-display: block !important;
-font-size: 11px !important;
-line-height: 16px !important;
-border-radius: 4px !important;
-font-weight: bold !important;
-text-align: center !important;
-color: #fff !important;
-height: 16px !important;
+/* Payment Method Fixes */
+ul.PaymentMethod_widget  label {
+	display:none;
 }
-
-/* Clean up/tighten payment options */
-ul.PaymentMethod_widget  label {display:none;}
 .PaymentMethod_widget .checkboxPaymentMethod span {
 	height: 40px;
 	width: 62px;
@@ -1317,6 +1235,28 @@ li.checkboxPaymentMethod {
 	width: 62px !important;
 }
 
+/* Guestbook fixes */
+.diy-guestbook-form input, .diy-guestbook-form textarea {
+    clear: left;
+    float: left;
+}
+
+/* --------------- end Websplanet widget fixes --------------- */
+
+/* column percentage display in DIY tool */
+.diy-percent-width {
+	width: auto !important;
+	top: 8px !important;
+	right: 0px !important;
+	display: block !important;
+	font-size: 11px !important;
+	line-height: 16px !important;
+	border-radius: 4px !important;
+	font-weight: bold !important;
+	text-align: center !important;
+	color: #fff !important;
+	height: 16px !important;
+}
 
 /* --------------- begin Websplanet module fixes --------------- */
 
@@ -1339,7 +1279,7 @@ div.Events_item {
 #FAQ_category_list li a:visited {
     background-color: red; /* replace with theme color */
     border-radius: 10px 10px 10px 10px;
-    font-family: "Century Gothic",Verdana,arial,sans-serif; /* replace with theme fonts */
+    font-family: Verdana,arial,sans-serif; /* replace with theme fonts */
     font-size: 21px;
     height: auto;
     line-height: 40px;
@@ -1368,46 +1308,24 @@ div#jobs-module ul {
     margin: 0;
     padding: 0;
 }
-/* for sites with dark backgrounds, the job desciption text gets lost as it is inline styled to be a dark color by default  */
-div.jobs-desc {
-     /*
-	background-color: #fff;
-	background-color: rgba(255,255,255, .75);
-	*/
-	}
-	
-ul#FAQ_category_list span p {
-	/* padding: 10px;
-	background-color: #fff;
-	background-color: rgba(255,255,255, .75);
-	*/
-	}
-	
-ul#FAQ_category_list span p span {
-	/* margin: 0; */
-	}
-	
-/* end dark background module fixes */
-
 .jobs-title,
 .jobs-title:hover {
     background: none;
     border: none;
-        font-family: "Century Gothic",Verdana,arial,sans-serif; /* replace with theme fonts */
-        font-size: 24px;
-        padding-left: 0px;
-        color: #E40A0A; /* replace with theme color */
+	font-family: Verdana,arial,sans-serif; /* replace with theme fonts */
+	font-size: 24px;
+	padding-left: 0px;
+	color: #E40A0A; /* replace with theme color */
 }
 .jobs-title a:hover,
 .jobs-title a:focus,
 .jobs-title a:active {
 	text-decoration: underline;
 }
-
 .jobs-apply a {
     background-color: #E40A0A; /* replace with theme color */
     border-radius: 10px 10px 10px 10px;
-    font-family: "Century Gothic",Verdana,arial,sans-serif;/* replace with theme fonts */
+    font-family: Verdana,arial,sans-serif;/* replace with theme fonts */
     font-size: 16px;
     height: auto;
     line-height: 40px;
@@ -1435,7 +1353,6 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	float:left !important;
 	margin-right: 0 !important;
 }	
-	 
 @media screen and (max-width: 767px) {
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inner div.widget-wrapper,
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
