@@ -1191,19 +1191,18 @@ li.checkboxPaymentMethod {
 
 /* column percentage display in DIY tool */
 .diy-percent-width {
-width: auto !important;
-top: 8px !important;
-right: 0px !important;
-display: block !important;
-font-size: 11px !important;
-line-height: 16px !important;
-border-radius: 4px !important;
-font-weight: bold !important;
-text-align: center !important;
-color: #fff !important;
-height: 16px !important;
+	width: auto !important;
+	top: 8px !important;
+	right: 0px !important;
+	display: block !important;
+	font-size: 11px !important;
+	line-height: 16px !important;
+	border-radius: 4px !important;
+	font-weight: bold !important;
+	text-align: center !important;
+	color: #fff !important;
+	height: 16px !important;
 }
-
 
 /* --------------- begin Websplanet module fixes --------------- */
 
