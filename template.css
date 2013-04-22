@@ -1,7 +1,8 @@
-/*YP Horizontal Framework A v3.2 - 3-19-2013
+/*YP Horizontal Framework A v4.1 - 4-19-2013
 fixed calculators and typography 
 MODULE STYLING  added 4/4/2013
 Updated mobile menu 4/5/2013
+Markup-Cleanup 4/19/2013
  */
 
 @import url("gfx/wp-skeleton.css"); 
@@ -36,27 +37,21 @@ h6, h6 span, h6 font span {
 	margin-bottom : 15px;
 	line-height: 120%;
 }
-
 h1, h1 span, h1 font span { 
 	font-size : 34px; 
 }
-
 h2, h2 span, h2 font span{ 	
 	font-size : 30px; 
 }
-
 h3, h3 span, h3 font span {	
 	font-size : 28px; 
 }
-
 h4, h4 span, h4 font span { 	
 	font-size : 24px; 
 }
-
 h5, h5 span, h5 font span { 
 	font-size : 20px;  
 }
-
 h6, h6 span, h6 font span { 
 	font-size : 20px; 
 }
@@ -124,50 +119,41 @@ div {
 	div.diy-f-spot div.calc-input-container, 
 	div.diy-f-spot div.calc-input-container span {
 		color: black; /* Replace with theme specific "dark" text color */
-	}
-		
+	}	
 p, span, div {
 	line-height:160%;
 }
-
 ul, 
 ol { 
 	margin : 0 0 1.5em 24px; 
 	padding-left : 24px; 
 	list-style-position: outside;
 }
-
 ul { 
 	list-style-type : disc; 
 }
-
 ol { 
 	list-style-type : decimal; 
 }
-
 ul li , 
 ol li  { 
 	margin : 0;
 	font-size : 14px; 
 	line-height:140%;
 }
-
 dl, 
 dd { 
 	margin-bottom : 1.5em;
 }
-
 dt { 
 	font-weight : normal; 
 }
-
 blockquote  { 
 	margin : 0 0 1.5em 24px; 
 	padding-left : 24px; 
 	border-left : 1px solid rgb(200,200,200); /* hex code can be used here too */
 	font-style : italic; 
 }
-
 blockquote:before, 
 blockquote:after, 
 q:before, 
@@ -175,7 +161,6 @@ q:after {
 	content : '';
 	content : none; 
 }
-
 b, 
 strong	{ 
 	font-weight : bold; 
@@ -185,27 +170,21 @@ i,
 em { 
 	font-style : italic; 
 }
-
 sup, 
 sub { 
 	position : relative;
 	font-size : 75%; 
 	line-height : 0; 
 }
-
 sup { 
 	top : -.5em; 
 }
-
 sub { 
 	bottom : -.25em; 
 }
-
 address { 
 	font-style : normal;
 }
-
-
 hr { 
 	border: solid #ddd; 
 	border-width: 1px 0 0; 
@@ -215,20 +194,18 @@ hr {
 }
 
 /* 4.LINKS */
-
 a, 
 a:visited {
 	outline : none;
 	color : #00F; 
 	text-decoration : underline;
 }
- 
+
 a:hover { 
 	outline : none;
 	color : rgb(40,40,40); /* hex code can be used here too */
 	text-decoration : underline; 
 }
- 
 a:active, 
 a:focus { 
 	outline : none;
@@ -236,8 +213,7 @@ a:focus {
 	text-decoration : underline;
 }
 
-/* layout */
-	
+/* layout */	
 p.m-logo {
 	text-align: center;
 	font-size:18px;
@@ -249,7 +225,6 @@ p.m-logo {
 	line-height:normal;
 	width:auto;
 }	
-	
 #wrapper-header, #wrapper-content, #wrapper-footer, #wrapper-copyright { 
 	width:100%;
 	position:relative;
@@ -265,20 +240,16 @@ p.m-logo {
 	background-color: #999;
 	padding: 10px 0px;
 }
-#header {
- 
-}
+#header { }
 #content {
 	padding:15px 0px; 
 	min-height:100px;
 }
 
 /* logo */
-
 #logo {
 	padding: 15px 0px;
 }
-	
 #logo a, #logo a:hover, #logo a div, #logo a:hover div {
 	text-decoration:none;
 	color:#fff;
@@ -288,9 +259,7 @@ p.m-logo {
 	text-transform:uppercase;
 	font-weight:bold;
 }
-div.slogan {	
-	
-}
+div.slogan { }
 	
 /* Phone */
 /* positioning and box model styling go here */
@@ -317,9 +286,7 @@ div.slogan {
 }
 
 /* WP wraps #siteMainDynHeaderImage1 with #header-image-wrapper-1 by defult but removes it once the image is replaced */
-div#header-image-wrapper-1 {
-	
-} 
+div#header-image-wrapper-1 { } 
 img#siteMainDynHeaderImage1 { 
 	width:100%; 
 	height:auto;
@@ -349,7 +316,6 @@ img#siteMainDynHeaderImage1 {
 }	
 
 /* footer */
-
 #footer-area {
 	padding:10px 0px;
 }
@@ -370,7 +336,7 @@ ul#nav {
 	margin: 0;
 	padding: 0;
 	width:auto;
-	}
+}
 /* start first level nav items */
 	ul#nav li {
 		float: left;
@@ -509,7 +475,6 @@ ul#nav {
 		-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
 		box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.6);
 	}	
-		 
 	#m-menu {
 		height: auto;
 		overflow: visible;
@@ -519,12 +484,10 @@ ul#nav {
 		z-index: 800;
 		display: block;
 		margin:0 auto;
-	}
-			
-   #m-menu-content {
-		display: none; /* hides the menu by default */
 	}	
-				 	
+	#m-menu-content {
+		display: none; /* hides the menu by default */
+	}		 	
 	#m-menu ul#nav {
 		margin: 0;
 		padding: 0;
@@ -623,8 +586,6 @@ ul#nav {
 				}
 } /* end mobile nav media query */
 
-
-
 /* 10.FOOTER AREA */
 
 /* mirror module for utility nav */
@@ -668,12 +629,11 @@ div#copyright a{
 }
 div#copyright br {
 	display:none;
-	}
+}
 .ypimg {
   float: right;
   margin: 0px 15px 0px 80px;
 }
-
 	
 @media only screen and (max-width: 767px){
 	div#copyright {
@@ -691,7 +651,20 @@ div#copyright br {
 }			
 
 /* 10 b. Form Styling */
-
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+textarea {
+	width: 95%;
+}
+select {
+	width: 100%;	
+}
+@media only screen and (max-width: 767px) {
+	select {
+		width: 98%;	
+	}
+}
 label {}
 input[type="text"] {}
 input[type="text"]:focus {} 
@@ -699,6 +672,7 @@ select {}
 select option {}
 textarea {}
 input[type="submit"] {}
+input[type="reset"] {}
 
 /* ----- Websplanet widget form classes ----- */
 .calculator-btn { /* match input[type=submit] styling */ }
@@ -728,14 +702,13 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 /* 11.WEBSPLANET DEFAULT */
 
 /* Modules */
-
 .module-wrapper {}
 .module-title {}
 .module-content {}
 
 /* Widgets */
 .widget-element {clear:left !important;}
-.widget-wrapper { margin: 10px 15px !important; }
+.widget-wrapper {}
 .widget-title {}
 .widget-body {}
 .diy-widget {min-height:25px;}
@@ -744,7 +717,6 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
 .image_wrapper.free-image-left{
 	margin-right: 5px;
 }
-
 .image_wrapper.free-image-right{
 	margin-left: 5px;
 }
@@ -818,7 +790,7 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
     display:inherit;
 }
 .widget-button{
-	width:100%; 
+	width:auto; 
 	height:auto; 
 	text-align:center;  
 	z-index:1001;
@@ -827,13 +799,11 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
     border-radius:10px;
 	background-color: #999;
 	line-height: 40px;
-	}
-	
+}
 div.widget-button:hover{
 	cursor:pointer;
 	background-color:#C60;
 	}
-
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .widget-popup{
     	height: 300px;
@@ -932,7 +902,9 @@ a.m-click-map {
 a.m-click-mail {
 	width:34%;
 }
-a.m-click-phone span, a.m-click-mail span, a.m-click-map span {
+a.m-click-phone span, 
+a.m-click-mail span, 
+a.m-click-map span {
 	height:45px;
 	width:100%;
 	overflow:hidden;
@@ -963,7 +935,8 @@ a.m-click-map span{
 }
 /* end mobile quick nav buttons */
 
-/* -------------------------------------------------------
+/* 
+   -------------------------------------------------------
    --------------- Websplanet widget fixes --------------- 
    -------------------------------------------------------
 */
@@ -1042,7 +1015,7 @@ div[type=rss_widget] ul { /* remove indent; requires !important */
 /* accordion and tabs break grid, this adds a margin to match other "widget-wrapper"s */
 div.diy-f-accordion,
 div.diy-f-tabs {
-	margin: 7px;
+	margin: 10px 15px;
 }
 /* Accordian fixes */
 .diy-f-accordion h3 {
@@ -1067,8 +1040,8 @@ textarea {
 }
 /* Forms Manager */
 label {
-	    margin-top: 0 !important; /* forms manager sets to 12px */
-	    line-height: 16px !important; /* forms manager sets to 25px */
+	margin-top: 0 !important; /* forms manager sets to 12px */
+	line-height: 16px !important; /* forms manager sets to 25px */
 }
 .form-manager li { /* spaces form feilds better, chunks items together */
 	margin-bottom: 12px !important;
@@ -1102,43 +1075,45 @@ div.calc-input-container {
 div.unit-results ul li input { /* fix width */
 	width: 97%;
 }	
-
 li.calc-param-row label {
   padding: 0 0 5px;
 }
-
-li.calc-param-row, li.calc-instruction-row, li.calc-resault-row 
-  {height:auto !important; margin-bottom:5px;}
-
-li.calc-param-row div.calc-input-container, li.calc-resault-row div.calc-input-container {
+li.calc-param-row, 
+li.calc-instruction-row, 
+li.calc-resault-row {
+	height:auto !important; 
+	margin-bottom:5px;
+}
+li.calc-param-row div.calc-input-container, 
+li.calc-resault-row div.calc-input-container {
   clear: left;
   float: left;
 }
-
-
-.calculator-btn {float:left;}
+.calculator-btn {
+	float:left;
+}
 
 /* weight calculator */
-
-div.calories-calc div.calc-input-container span.small {display:none;}
-
-div.calc-input-container #weight_kg, div.calc-input-container #cen {display:none;}
-
-div.calc-input-container span.or {display:none !important;}
-
+div.calories-calc div.calc-input-container span.small {
+	display:none;
+}
+div.calc-input-container #weight_kg, 
+div.calc-input-container #cen {
+	display:none;
+}
+div.calc-input-container span.or {
+	display:none !important;
+}
 div.calories-calc div.calc-input-container input[type="radio"] {
   border: 0px solid #AACFE4;
-
 }
 
 /* conversion calculator */
-
 div.unit-calc li.unit-menu ul.unit-type {
   display: inline-block;
   text-align: center;
   width: 100%;
 }
-
 div.unit-calc li.unit-menu ul.unit-type li {
   clear: none !important;
   display: block;
@@ -1147,7 +1122,6 @@ div.unit-calc li.unit-menu ul.unit-type li {
   font-size: 10px;
   width:auto !important;
 }
-
 div.unit-calc li.unit-menu ul.unit-type li a {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -1174,13 +1148,13 @@ div.unit-calc li.unit-menu ul.unit-type li a {
   line-height: normal;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 } 
-
-div.unit-calc li.unit-menu ul.unit-type li a.active, div.unit-calc li.unit-menu ul.unit-type li a:hover {
+div.unit-calc li.unit-menu ul.unit-type li a.active, 
+div.unit-calc li.unit-menu ul.unit-type li a:hover {
 	 background-image: linear-gradient(#d7d7d7, #d7d7d7 25%, #c7c7c7 );
 	 color:#000;
 	 text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.75);
      text-decoration:none;
-	}
+}
 
 /* results */
  li.calc-resault-row label {
@@ -1192,8 +1166,11 @@ div.unit-calc li.unit-menu ul.unit-type li a.active, div.unit-calc li.unit-menu 
 .big-clock {
   font-size: 30px !important;
 }
+
 /* Payment Method Fixes */
-ul.PaymentMethod_widget  label {display:none;}
+ul.PaymentMethod_widget  label {
+	display:none;
+}
 .PaymentMethod_widget .checkboxPaymentMethod span {
 	height: 40px;
 	width: 62px;
@@ -1204,15 +1181,15 @@ li.checkboxPaymentMethod {
 }
 
 /* Guestbook fixes */
-.diy-guestbook-form input, .diy-guestbook-form textarea {
+.diy-guestbook-form input, 
+.diy-guestbook-form textarea {
     clear: left;
     float: left;
 }
 
 /* --------------- end Websplanet widget fixes --------------- */
 
-/* column percentage */
-
+/* column percentage display in DIY tool */
 .diy-percent-width {
 width: auto !important;
 top: 8px !important;
@@ -1249,7 +1226,7 @@ div.Events_item {
 #FAQ_category_list li a:visited {
     background-color: red; /* replace with theme color */
     border-radius: 10px 10px 10px 10px;
-    font-family: "Century Gothic",Verdana,arial,sans-serif; /* replace with theme fonts */
+    font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
     font-size: 21px;
     height: auto;
     line-height: 40px;
@@ -1278,48 +1255,24 @@ div#jobs-module ul {
     margin: 0;
     padding: 0;
 }
-
-/* for sites with dark backgrounds, the job desciption text gets lost as it is inline styled to be a dark color by default  */
-div.jobs-desc {
-     /*
-	background-color: #fff;
-	background-color: rgba(255,255,255, .75);
-	*/
-	}
-	
-ul#FAQ_category_list span p {
-	/* padding: 10px;
-	background-color: #fff;
-	background-color: rgba(255,255,255, .75);
-	*/
-	}
-	
-ul#FAQ_category_list span p span {
-	/* margin: 0; */
-	}
-	
-/* end dark background module fixes */ 
-
-
 .jobs-title,
 .jobs-title:hover {
     background: none;
     border: none;
-        font-family: "Century Gothic",Verdana,arial,sans-serif; /* replace with theme fonts */
-        font-size: 24px;
-        padding-left: 0px;
-        color: #E40A0A; /* replace with theme color */
+	font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
+	font-size: 24px;
+	padding-left: 0px;
+	color: #E40A0A; /* replace with theme color */
 }
 .jobs-title a:hover,
 .jobs-title a:focus,
 .jobs-title a:active {
 	text-decoration: underline;
 }
-
 .jobs-apply a {
     background-color: #E40A0A; /* replace with theme color */
     border-radius: 10px 10px 10px 10px;
-    font-family: "Century Gothic",Verdana,arial,sans-serif;/* replace with theme fonts */
+    font-family: Arial, Helvetica, sans-serif;/* replace with theme fonts */
     font-size: 16px;
     height: auto;
     line-height: 40px;
@@ -1337,7 +1290,6 @@ ul#FAQ_category_list span p span {
 	-webkit-box-shadow: 0 0 10px #000000 inset;
 	background: #E40A0A; /* replace with theme color */
 }
-
 /* --------------- end Websplanet module fixes --------------- */
 
 /* --------------- Default Site Callout Classes --------------- */
@@ -1347,7 +1299,6 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	float:left !important;
 	margin-right: 0 !important;
 }	
-	 
 @media screen and (max-width: 767px) {
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inner div.widget-wrapper,
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
