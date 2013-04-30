@@ -148,10 +148,16 @@ dd {
 dt { 
 	font-weight : normal; 
 }
+/* box method styling here */
 blockquote  { 
 	margin : 0 0 1.5em 24px; 
 	padding-left : 24px; 
 	border-left : 1px solid rgb(200,200,200); /* hex code can be used here too */
+}
+/* font styling here */
+blockquote,
+blockquote div,
+blockquote p {
 	font-style : italic; 
 }
 blockquote:before, 
@@ -656,6 +662,7 @@ input[type="password"],
 input[type="email"], 
 textarea {
 	width: 95%;
+	clear: left;
 }
 select {
 	width: 100%;	
@@ -878,7 +885,9 @@ div.widget-button:hover{
 	text-align:center;
 	display:none;
 }
-a.m-click-phone, a.m-click-mail, a.m-click-map {
+a.m-click-phone, 
+a.m-click-mail, 
+a.m-click-map {
 	float:left;
 	height:45px;
 	line-height:45px;
@@ -887,6 +896,7 @@ a.m-click-phone, a.m-click-mail, a.m-click-map {
 	color: #ffffff;
 	padding: 0px 0px;
 	text-align:center;
+	background: #3b3b3b;
 	/* this is the background of quick nav. please do not add left and right borders. They will mess up the widths of the buttons and will not display correctly. */
 	background: -moz-linear-gradient( top, #a3a3a3 0%, #3b3b3b 50%, #242424 50%, #000000);
 	background: -webkit-gradient( linear, left top, left bottom, from(#a3a3a3), color-stop(0.50, #3b3b3b), color-stop(0.50, #242424), to(#000000));
@@ -1025,8 +1035,7 @@ div.diy-f-spot {
 	padding: 12px 0 12px 36px; /* default is em based */
 }
 
-/* ---------- Forms Fixes ----------*/
-.form-manager li input[type="text"], 
+/* ---------- Forms Fixes ----------*/ 
 .contact-us li input[type="text"] {
    width: 98%;
 }
@@ -1054,6 +1063,27 @@ label {
 li.adress-block-field {
 	margin-right: 2%;
 	width: 48%;
+}
+div.formManagerFront select {
+	width: 100% !important;
+}
+@media only screen and (max-width: 767px) {
+	div.formManagerFront select {
+		max-width: 97.45% !important;
+	}
+}
+div.formManagerFront input[type=text],
+div.formManagerFront textarea {
+	width: 98.5% !important;
+}
+div.formManagerFront input[type=text] {
+	padding-top: 0px;
+}
+div.formManagerFront dd {
+	margin-bottom: 4px;
+}
+div.contactUsFront dd {
+	margin-bottom: 3px;
 }
 /* Contact Form */
 .contact-us label {
@@ -1187,6 +1217,13 @@ li.checkboxPaymentMethod {
     clear: left;
     float: left;
 }
+.fancybox-inner * {
+	color: #666666;	
+}
+.fancybox-inner input[type=text],
+.fancybox-inner textarea {
+	width: 75%;	
+}
 
 /* --------------- end Websplanet widget fixes --------------- */
 
@@ -1222,8 +1259,11 @@ li.checkboxPaymentMethod {
 div.Events_item {
 	padding: 0;
 }
-#FAQ_category_list li a,
-#FAQ_category_list li a:visited {
+div.Events_item_desc {
+	clear: both;
+}
+#FAQ_category_list > li > a,
+#FAQ_category_list > li > a:visited {
     background-color: red; /* replace with theme color */
     border-radius: 10px 10px 10px 10px;
     font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
@@ -1236,9 +1276,9 @@ div.Events_item {
     color: #fff;
     border: none;
 }
-#FAQ_category_list li a:hover,
-#FAQ_category_list li a:focus,
-#FAQ_category_list li a:active {
+#FAQ_category_list > li > a:hover,
+#FAQ_category_list > li > a:focus,
+#FAQ_category_list > li > a:active {
 	cursor:pointer;
 	box-shadow: 0 0 10px #000000 inset;
 	-webkit-box-shadow: 0 0 10px #000000 inset;
