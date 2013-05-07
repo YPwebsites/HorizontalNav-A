@@ -53,7 +53,7 @@ h5, h5 div, h5 span, h5 font span {
 	font-size : 20px;  
 }
 h6, h6 div, h6 span, h6 font span { 
-	font-size : 20px; 
+	font-size : 16px; 
 }
 
 /* 3.TYPOGRAPHY */
@@ -1226,6 +1226,9 @@ li.checkboxPaymentMethod {
 .fancybox-inner input[type=text],
 .fancybox-inner textarea {
 	width: 75%;	
+}
+.click2sms-popup-wrapper .click2sms-popup-form input {
+	width: 50px;
 }
 
 /* --------------- end Websplanet widget fixes --------------- */
