@@ -27,32 +27,32 @@ body {
 
 /* 2.HEADINGS */
 
-h1, h1 span, h1 font span,
-h2, h2 span, h2 font span, 
-h3, h3 span, h3 font span, 
-h4, h4 span, h4 font span, 
-h5, h5 span, h5 font span, 
-h6, h6 span, h6 font span {
+h1, h1 span, h1 font span, h1 div,
+h2, h2 span, h2 font span, h2 div,
+h3, h3 span, h3 font span, h3 div,
+h4, h4 span, h4 font span, h4 div,
+h5, h5 span, h5 font span, h5 div,
+h6, h6 span, h6 font span, h6 div {
 	font-weight:normal;
 	margin-bottom : 15px;
 	line-height: 120%;
 }
-h1, h1 span, h1 font span { 
+h1, h1 div, h1 span, h1 font span { 
 	font-size : 34px; 
 }
-h2, h2 span, h2 font span{ 	
+h2, h2 div, h2 span, h2 font span{ 	
 	font-size : 30px; 
 }
-h3, h3 span, h3 font span {	
+h3, h3 div, h3 span, h3 font span {	
 	font-size : 28px; 
 }
-h4, h4 span, h4 font span { 	
+h4, h4 div, h4 span, h4 font span { 	
 	font-size : 24px; 
 }
-h5, h5 span, h5 font span { 
+h5, h5 div, h5 span, h5 font span { 
 	font-size : 20px;  
 }
-h6, h6 span, h6 font span { 
+h6, h6 div, h6 span, h6 font span { 
 	font-size : 20px; 
 }
 
@@ -265,7 +265,10 @@ p.m-logo {
 	text-transform:uppercase;
 	font-weight:bold;
 }
-div.slogan { }
+/* positioning and box method styling */
+div.slogan {  }
+/* font styling */
+div.slogan, div.slogan div { }
 	
 /* Phone */
 /* positioning and box model styling go here */
@@ -1338,7 +1341,10 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	width:45% !important;
 	float:left !important;
 	margin-right: 0 !important;
-}	
+}
+div.horizontal.callouts div.vertical div.diy-f-spot.callout p.figcaption {
+	display: none;	
+}
 @media screen and (max-width: 767px) {
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout1 div.diy-f-spot-inner div.widget-wrapper,
 	div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inner div.widget-wrapper {
