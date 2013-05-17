@@ -21,11 +21,11 @@
 <!-- mobile navigation script -->
 <script>
 $(document).ready(function(){
-	$("#navTab").click(function(){
-	  $("#m-menu-content").slideToggle("slow");
-	  $(this).toggleClass("active");
-	  	});
-	});
+    $("#navTab").click(function(){
+      $("#m-menu-content").slideToggle("slow");
+      $(this).toggleClass("active");
+        });
+    });
 </script>
 <!-- end mobile navigation script -->
 
@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 <!-- back to top -->
 <p id="back-top">
-	<a href="#top"><span></span>Back to Top</a>
+    <a href="#top"><span></span>Back to Top</a>
 </p>
 <!-- end back to top -->
 
@@ -58,100 +58,109 @@ $(document).ready(function(){
 <!-- end mobile phone # -->
 
 <!-- mobile menu -->
-<nav id="m-menu" >
-	 <!-- mobile menu button -->
-     <div id="m-wrapper-menu">
-        <a id="navTab"></a>  
-     </div>  
-     <!-- end mobile menu button --> 
-     <div id="m-menu-content">
-        <ul id="nav">
-            <li class="current first"><a href="#">Home</a>
-                <ul>
-                    <li><a href="#">drop 1</a>
-                        <ul>
-                            <li><a href="#">drop 2</a></li>
-                            <li><a href="#">drop 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">drop 1</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Services</a></li>
-            <li class="last"><a href="#">Contact Us</a>
-                <ul>
-                    <li><a href="#">drop 2</a></li>
-                    <li><a href="#">drop 2</a></li>
-                </ul>
-            </li>	
-        </ul>    
-     </div>
-</nav>
-<!-- end mobile menu -->
-<!-- header -->
-<div id="wrapper-header" class="skinBg"><!-- the skin bg is one of the images that can be swapped out by the user through the UI -->  
-    <header id="header" class="sk-container">
-    
-        <div id="logo-slogan" class="twelve columns">
-        	<!-- logo tag --> <a class="logo" href="#"><div>Company Name</div></a> <!-- logo tag -->
-            <div class="slogan">Your Slogan Goes Here</div>
-        </div><!-- end logo -->
-        
-        <div id="phone-cta" class="four columns">
-        	<div class="tagline2">Call Now</div>
-            <div class="phone-number">404-555-5555</div>
-        </div><!-- end phone -->
-    	
-        <!-- Start nav#menu -->
-  		<nav id="menu" class="sixteen columns">
-        	<ul id="nav">
-        		<li class="current first"><a href="#">Home</a>
-                	<ul>
-                    	<li><a href="#">drop 1</a>
-                        	<ul>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
-                                <li><a href="#">drop 2</a></li>
+<nav>
+    <div id="m-menu">
+     <!-- mobile menu button -->
+         <div id="m-wrapper-menu">
+            <a id="navTab"></a>  
+         </div>  
+         <!-- end mobile menu button --> 
+         <div id="m-menu-content">
+            <ul id="nav">
+                <li class="current first"><a href="#">Home</a>
+                    <ul>
+                        <li><a href="#">drop 1</a>
+                            <ul>
                                 <li><a href="#">drop 2</a></li>
                                 <li><a href="#">drop 2</a></li>
                             </ul>
                         </li>
                         <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
-                        <li><a href="#">drop 1</a></li>
                     </ul>
-                 
                 </li>
                 <li><a href="#">Services</a></li>
-                <li class="last"><a href="#">Contact Us</a></li>	
-            </ul>
-        </nav>
-        <!-- End nav#menu -->
+                <li class="last"><a href="#">Contact Us</a>
+                    <ul>
+                        <li><a href="#">drop 2</a></li>
+                        <li><a href="#">drop 2</a></li>
+                    </ul>
+                </li>   
+            </ul>    
+         </div>
+    </div>
+</nav>
+<!-- end mobile menu -->
+<!-- header -->
+<header>
+    <div id="wrapper-header" class="skinBg"><!-- the skin bg is one of the images that can be swapped out by the user through the UI -->  
+        <div id="header" class="sk-container">
         
-
-     	<!-- start header image -->
-     	<div id="header-image-container" class="sixteen columns">
-   	    	<img id="siteMainDynHeaderImage1" src="gfx/header_image_1.jpg" >
-        </div> 
-     	<!-- end header image -->
- 
-    </header><!-- end header container -->  
-</div><!-- header wrapper end --><!-- end skin bg -->
-
+            <div id="logo-slogan" class="twelve columns">
+                <!-- logo tag --> <a class="logo" href="#"><div>Company Name</div></a> <!-- logo tag -->
+                <div class="slogan">Your Slogan Goes Here</div>
+            </div><!-- end logo -->
+            
+            <div id="phone-cta" class="four columns">
+                <div class="tagline2">Call Now</div>
+                <div class="phone-number">404-555-5555</div>
+            </div><!-- end phone -->
+        </div><!-- end header container -->  
+    
+        <div id="nav-wrapper">  
+            <div class="sk-container"> 
+                <!-- Start nav#menu -->
+                <nav>
+                    <div id="menu" class="sixteen columns">
+                        <ul id="nav">
+                            <li class="current first"><a href="#">Home</a>
+                                <ul>
+                                    <li><a href="#">drop 1</a>
+                                        <ul>
+                                            <li><a href="#">drop 2</a></li>
+                                            <li><a href="#">drop 2</a></li>
+                                            <li><a href="#">drop 2</a></li>
+                                            <li><a href="#">drop 2</a></li>
+                                            <li><a href="#">drop 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">drop 1</a></li>
+                                    <li><a href="#">drop 1</a></li>
+                                    <li><a href="#">drop 1</a></li>
+                                    <li><a href="#">drop 1</a></li>
+                                </ul>
+                             
+                            </li>
+                            <li><a href="#">Services</a></li>
+                            <li class="last"><a href="#">Contact Us</a></li>    
+                        </ul>
+                    </div><!-- End div#menu -->
+                </nav>
+                
+            </div>
+        </div><!-- End nav-wrapper -->
+        <div class="sk-container">
+            <!-- start header image -->
+            <div id="header-image-container" class="sixteen columns">
+                <img id="siteMainDynHeaderImage1" src="gfx/header_image_1.jpg" >
+            </div> 
+            <!-- end header image -->
+     
+        </div><!-- end header image container -->  
+    </div><!-- header wrapper end --><!-- end skin bg -->
+</header>
 <!-- start div#wrapper-content -->
 <div id="wrapper-content">
-	<div class="sk-container">
+    <div class="sk-container">
     
-    	<!-- content area -->
-        <section id="content" class="sixteen columns">
-        	<!-- Page title only required on internal pages -->
-        	<h2>{CONTENT_TITLE_ONLY}</h2> 
-        	<!-- Start Callouts; this is Websplanet code to simulate the Default Site callouts -->
+        <!-- content area -->
+        <div id="content" class="sixteen columns">
+            <!-- Page title only required on internal pages -->
+            <h2>{CONTENT_TITLE_ONLY}</h2> 
+            <!-- Start Callouts; this is Websplanet code to simulate the Default Site callouts -->
             <style>
-				div#widetExamples {	}
-				.vertical {float: left;}
-			</style>
+                div#widetExamples { }
+                .vertical {float: left;}
+            </style>
             <div style="" class="horizontal clearfix callouts">
                 <div style="width: 50%;" class="vertical ">
                     <div style="" class="diy-f-spot callout1">
@@ -170,10 +179,10 @@ $(document).ready(function(){
                             <div class="widget-wrapper free-text diy-resizable ">
                                 <div class="widget-body">
                                     <div class="freetextarea">
-            							<h3>Services</h3>
+                                        <h3>Services</h3>
                                         <p>
-                                        	<span>
-                                            	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+                                            <span>
+                                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
                                             </span>
                                         </p>
                                     </div>
@@ -201,10 +210,10 @@ $(document).ready(function(){
                             <div class="widget-wrapper free-text diy-resizable ">
                                 <div class="widget-body">
                                     <div class="freetextarea">
-            							<h3>Contact Us</h3>
+                                        <h3>Contact Us</h3>
                                         <p>
-                                        	<span>
-                                            	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
+                                            <span>
+                                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span>
                                             </span>
                                         </p>
                                     </div>
@@ -219,8 +228,8 @@ $(document).ready(function(){
             <!-- end Callouts -->
             <!-- start element examples; NOTE: containing div is for margins that would be rendered by .widget-wrapper -->
             <div id="widetExamples">
-            	<div class="eight columns alpha">
-    				<!-- Header elements -->
+                <div class="eight columns alpha">
+                    <!-- Header elements -->
                     <h1>This is a header 1</h1>
                     <h2>This is a header 2</h2>
                     <h3>This is a header 3</h3>
@@ -234,7 +243,7 @@ $(document).ready(function(){
                 <div class="clear"></div>
                 <hr>
                 <div class="twelve columns alpha">
-                	<!-- Paragraph and link elements -->
+                    <!-- Paragraph and link elements -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem sapien, venenatis quis dictum nec, ultricies in odio. Sed eget lacus sem, id tincidunt purus. Nam rhoncus, enim luctus gravida viverra, nisl eros malesuada nunc, ac ultricies metus velit
                         vel lectus. <a href="#">Curabitur lobortis</a> viverra elementum. Duis sit amet nisi ut lacus posuere molestie et ac odio.</p>
                     <p>Sed mauris magna, consectetur ut mattis vitae, volutpat quis diam. Nulla velit sapien, aliquet sit amet vehicula sit amet, ornare eu orci. Suspendisse nec erat risus, mollis tempus orci. Suspendisse tempus tristique consectetur.</p>
@@ -263,7 +272,7 @@ $(document).ready(function(){
                     <div class="widget-button">Widget Button</div>
                 </div>
                 <div class="four columns omega">
-                	<!-- Form Elements -->
+                    <!-- Form Elements -->
                     <form>
                         <ul>
                             <li>
@@ -306,35 +315,37 @@ $(document).ready(function(){
             </div>
             <!-- end element examples -->
             
-        </section> <!-- end content area -->
+        </div> <!-- end content area -->
     </div><!-- end sk-container -->
 </div>
 <!-- end div#wrapper-content -->
 
 <!-- start div#wrapper-footer -->
 <div id="wrapper-footer">
-	<footer class="sk-container">
-    	<!-- start mirrior menu module -->
+    <footer>
+    <div class="sk-container">
+        <!-- start mirrior menu module -->
         <nav class="sixteen columns">
             <ul id="mirror-menu-module">
                 <li class="first"><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
-                <li class="last"><a href="#">Contact Us</a></li>	
+                <li class="last"><a href="#">Contact Us</a></li>    
             </ul>
         </nav>  
         <!-- end mirrior menu module -->
         
-     	<div id="footer-area" class="sixteen columns">
-  			 {FOOTER_DATA}
-		</div>   
-    </footer>    
+        <div id="footer-area" class="sixteen columns">
+             {FOOTER_DATA}
+        </div>   
+    </footer> 
+    </div>   
 </div>
 <!-- end div#wrapper-footer -->
 
 <!-- start div#wrapper-copyright -->
 <div id="wrapper-copyright">
     <div class="sk-container">
-    	<script src='http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_c/c0/c04/332/gfx/copyright.js' type='text/javascript'></script>
+        <script src='http://unpub.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_c/c0/c04/332/gfx/copyright.js' type='text/javascript'></script>
     </div>
 </div>
 <!-- end div#wrapper-copyright -->
