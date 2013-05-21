@@ -9,13 +9,14 @@ changed logo, slogan, cta, phone css 5-09-2013
 
 @import url("gfx/wp-skeleton.css"); 
 
+
 header, footer, nav, section, article {display: block;}
 
 body {
 	margin: 0;
-	color: #000;
-	font-size : 14px;
-	line-height:160%;
+	color: #595959;
+	font-size : 100%;
+	line-height:150%;
 	font-family:Verdana, Geneva, sans-serif; /* Set default font styles here */
 }
 	body { 
@@ -988,7 +989,7 @@ form ul {
     margin-left: 0;
     padding-left: 0;
 }
-nav#menu ul li a.hover { }
+div#menu ul li a.hover { }
 /* footer data link */
 a.websplanet {
 	color: #fff;
