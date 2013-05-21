@@ -508,6 +508,7 @@ ul#nav {
 		z-index: 800;
 		display: block;
 		margin:0 auto;
+		line-height: 0;
 	}	
 	#m-menu-content {
 		display: none; /* hides the menu by default */
